@@ -1,0 +1,13 @@
+.c-gmenu-list{
+  &--pc{
+    display: none;
+    @include pc{
+      display: block;
+    }
+  }
+  &--sp{
+    @include pc{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.p-contents{
+  padding: 9.1rem 3rem 0;
+  @include pc{
+    padding: 10rem 20rem 0;
+  }
+  &__about, &__service, &__news, &__contact{
+    padding-bottom: 15rem;
+    h3{
+      text-align: center;
+      color: #141414;
+      font-size: 3.6rem;
+      letter-spacing: .1rem;
+    }
+    h4{
+      color: #141414;
+      font-size: 2rem;
+      line-height: 1.5;
+      font-weight: 600;
+      letter-spacing: .5rem;
+      padding-bottom: 3.4rem;
+    }
+    p{
+      font-size: 1.4rem;
+      line-height: 2;
+      color: #141414;
+    }
+  }
+  &__about, &__service{
+    h3{
+      padding-bottom: 7.5rem;
+    }
+  }
+  &__service{
+    &__image{
+      @include pc{
+        width: 80%;
+      }
+      img{
+        width: 100%;
+        padding: 4rem 0 5.5rem;
+        @include pc{
+          width: 100%;
+          object-fit: cover;
+          padding: 0;
+        }
+      }
+    }
+    &__wrap1, &__wrap2{
+      @include pc{
+        display: flex;
+      }
+    }
+    &__wrap1{
+      @include pc{
+        flex-direction: row-reverse;
+        padding-bottom: 2.5rem;
+      }
+    }
+    &__description{
+      &--top, &--bottom{
+        @include pc{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+      &--top{
+        @include pc{
+          padding-left: 7rem;
+        }
+      }
+      &--bottom{
+        @include pc{
+          padding-right: 7rem;
+        }
+      }
+    }
+  }
+  &__news{
+    h3{
+      padding-bottom: 7rem;
+    }
+  }
+}
